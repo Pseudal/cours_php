@@ -1,4 +1,5 @@
 <?php ob_start(); ?>
+
 <div class="row text-center">
   <div class="col-3">
     <div class="card text-bg-primary">

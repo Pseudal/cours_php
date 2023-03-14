@@ -45,6 +45,7 @@ class AdminCategoryController{
             }
         }
     }
+    
     public function editCategory(){
         AdminAuthController::isLogged();
         if(isset($_GET['id']) && filter_var($_GET['id'], FILTER_VALIDATE_INT) ){
@@ -68,7 +69,7 @@ class AdminCategoryController{
     }
 
     public function listData(){
-        AdminAuthController::isLogged();
+        //AdminAuthController::isLogged();
         $data = $this->acmodel->getData();
         require_once(dirname(dirname(__DIR__)).'/views/admin/dashbaordView.php');
     }
